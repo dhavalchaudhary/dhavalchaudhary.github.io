@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery.fullpage.min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap,animate%20and%20fullpage.css">
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="css/style-light.css">
 </head>
 
 <body>
@@ -26,17 +24,20 @@
     <div id="fullpage">
         <div class="section active text-center " id="section0">
             <h1 id="type-name" class="light">Hi, I'm Dhaval</h1>
-            <h3 class="light">Front-end Developer, UI/UX Designer and an Audiophile based in <a href="https://en.wikipedia.org/wiki/Goa" target="_blank" id="location">Goa</a></h3>
-            <div class="row" id="home-buttons">
-                <div class="col-xs-12 col-md-4 col-md-offset-4">
-                    <button class="btn btn-default light"><b>Projects</b></button>
-                    <button class="btn btn-default light"><b>Hire Me</b></button>
-                </div>
+            <div class="hidden-xs">
+                <h3 class="light">Front-end Developer and an UI/UX Designer based in <a href="https://en.wikipedia.org/wiki/Hyderabad" target="_blank" id="location">Hyderabad</a>.</h3>
             </div>
+                <div class="row" id="home-buttons">
+                    <div class="col-xs-12 col-md-4 col-md-offset-4">
+                        <button class="btn btn-default light"><b>Projects</b></button>
+                        <button class="btn btn-default light"><b>Hire Me</b></button>
+                    </div>
+                </div>
+            
         </div>
         <div class="section text-center " id="section1">
             <div class="container">
-                <h3 class="light"> Hello, my name is Dhaval and I'm a front-end developer and UI/UX Designer based in Goa, India. I am also a final year undergraduate student studying chemical engineering at BITS Goa. I am a self-taught developer and have a strong foundation in HTML, CSS, Responsive Web Design, Javascript and various other frameworks like Bootstrap and Jquery. Slide down to check my experience and projects.</h3>
+                <h3 class="light"> Hello, my name is Dhaval and I'm a front-end developer and UI/UX Designer based in Hyderabad, India. I am also a final year undergraduate student studying chemical engineering at BITS Goa. I am a self-taught developer and have a strong foundation in HTML, CSS, Responsive Web Design, Javascript and various other frameworks like Bootstrap,JQuery and React.</h3>
             </div>
         </div>
         <div class="section text-center" id="section2">
@@ -47,7 +48,7 @@
             <div class="slide" id="slide1">
                 <div class="container text-center">
                     <div class="project ">
-                        <img src="images/projects/local%20weather.png" alt="Local Weather" class="project-image" />
+                        <img src="" data-src="images/projects/local%20weather.png" alt="Local Weather" class="project-image" />
                         <h3 class="project-name light">Local Weather</h3>
                         <div class="row project-buttons">
                             <div class="col-xs-12 col-md-4 col-md-offset-4">
@@ -66,7 +67,7 @@
             <div class="slide" id="slide2">
                 <div class="container text-center">
                     <div class="project text-center">
-                        <img src="images/projects/wikipedia%20viewer.png" alt="Wikipedia Viewer" class="project-image" />
+                        <img src="" data-src="images/projects/wikipedia%20viewer.png" alt="Wikipedia Viewer" class="project-image" />
                         <h3 class="project-name light">Wikipedia Viewer</h3>
                         <div class="row project-buttons">
                             <div class="col-xs-12 col-md-4 col-md-offset-4">
@@ -84,7 +85,7 @@
             <div class="slide" id="slide3">
                 <div class="container text-center">
                     <div class="project text-center">
-                        <img src="images/projects/pomodoro%20timer.png" alt="Pomodoro Timer" class="project-image" />
+                        <img src="" data-src="images/projects/pomodoro%20timer.png" alt="Pomodoro Timer" class="project-image" />
                         <h3 class="project-name light">Pomodoro Timer</h3>
                         <div class="row project-buttons">
                             <div class="col-xs-12 col-md-4 col-md-offset-4">
@@ -103,13 +104,13 @@
                     </h3>
                 <div class="row" id="contact-buttons">
                     <div class="col-xs-12 col-md-4 col-md-offset-4">
-                        <a href="https://twitter.com/dhaval96_" >
+                        <a href="https://twitter.com/dhaval96_" target="_blank">
                             <button class="btn btn-default light" id="twitter-button"><b>Twitter</b></button>
                         </a>
-                        <a href="mailto:dhavalchaudhary96@gmail.com">
+                        <a href="mailto:dhavalchaudhary96@gmail.com" target="_blank">
                             <button class="btn btn-default light" id="mail-button"><b>Mail</b></button>
                         </a>
-                        <a href="https://www.linkedin.com/in/dhaval-chaudhary-b5307687" >
+                        <a href="https://www.linkedin.com/in/dhaval-chaudhary-b5307687" target="_blank">
                             <button class="btn btn-default light" id="linkedIn-button"><b>LinkedIn</b></button>
                         </a>
                     </div>
@@ -117,14 +118,19 @@
             </div>
         </div>
     </div>
-    <div id="footer">
-        <div class="text-right" id="touch-navigation">
-            <h4><span id="touch-navigation-previous" >Previous</span><span>/</span><span id="touch-navigation-next">Next</span></h4>
+    <div class="row" id="footer">
+        <div class="col-xs-6" id="night-mode">
+            <h4 class="text-left"><b>Lights Off</b></h4>
+            <!-- For faster transition to night mode -->
+            <img src="images/background/night2%20cropped.jpg" class="hidden" />
+        </div>
+        <div class="col-xs-6">
+            <h4 class="text-right" id="touch-navigation"><span id="touch-navigation-previous" >Previous</span><span>/</span><span id="touch-navigation-next">Next</span></h4>
+            
         </div>
     </div>
-    <script src="https://use.fontawesome.com/eae4af2951.js"></script>
-    <script src="js/jquery-2.2.0.min.js"></script>
-    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="https://use.fontawesome.com/eae4af2951.js" defer></script>
+    <script src="js/jquery%20and%20fullpage.js"></script>
     <script src="js/script.js"></script>
 </body>
 
