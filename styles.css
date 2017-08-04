@@ -21,8 +21,6 @@ body{
   padding: 35px;
   max-width: 80vw;
   max-height: 80vh;
-  overflow-x: scroll;
-  overflow-y: scroll;
   text-align: center;
   box-shadow: 0 0 30px 1px rgba(0,0,0,0.2);
   -moz-box-shadow: 0 0 30px 1px rgba(0,0,0,0.2);
